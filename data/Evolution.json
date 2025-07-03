@@ -1,0 +1,163 @@
+[
+  {
+    "type": "weapon",
+    "equipId": "21",
+    "level": "1",
+    "equipmentEvolutionList": {
+      "1": [
+        {
+          "evolutionId": "1",
+          "isApplied": false,
+          "iconIndex": "34",
+          "type": "param",
+          "description": "Sharpen blade",
+          "param": "atk",
+          "change": "3",
+          "costs": [
+            {
+              "itemId": "12",
+              "amount": "1"
+            },
+            {
+              "itemId": "11",
+              "amount": "10"
+            }
+          ],
+          "help": "Using a whetstone to sharpen the swordblade blase"
+        },
+        {
+          "evolutionId": "2",
+          "isApplied": false,
+          "iconIndex": "3",
+          "type": "skill",
+          "description": "hackslash",
+          "param": "skill",
+          "change": "15",
+          "costs": [
+            {
+              "itemId": "1",
+              "amount": "5"
+            }
+          ],
+          "help": "Learn a new skill"
+        }
+      ],
+      "2": [
+        {
+          "evolutionId": "3",
+          "isApplied": false,
+          "iconIndex": "5",
+          "type": "param",
+          "description": "Increase sharpness",
+          "param": "atk",
+          "change": "5",
+          "costs": [
+            {
+              "itemId": "12",
+              "amount": "2"
+            },
+            {
+              "itemId": "11",
+              "amount": "20"
+            }
+          ],
+          "help": "Using a better whetstone to sharpen the swordblade"
+        }
+      ]
+    },
+    "equipmentEvolutionLevel": {
+      "1": {
+        "description": "Long Sword",
+        "traits": [
+          {
+            "code": "5",
+            "dataId": "1",
+            "value": "15.00"
+          }
+        ],
+        "iconIndex": "97",
+        "name": "Long Sword",
+        "note": "teste",
+        "params": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "costs": [
+          {
+            "itemId": "11",
+            "amount": "5"
+          }
+        ],
+        "help": "Evoluir arma",
+        "changeEquipmentLevel": "2"
+      }
+    }
+  },
+  {
+    "type": "equip",
+    "equipId": "21",
+    "equipmentEvolutionList": [
+      {
+        "isApplied": false,
+        "iconIndex": "1",
+        "type": "",
+        "description": "",
+        "param": "atk",
+        "change": "123",
+        "costs": [
+          {
+            "itemId": "12",
+            "amount": "1"
+          },
+          {
+            "itemId": "11",
+            "amount": "10"
+          }
+        ],
+        "help": ""
+      },
+      {
+        "iconIndex": "1",
+        "Type": "skill",
+        "Description": "testando skill",
+        "param": "skill",
+        "change": "15",
+        "costs": [
+          {
+            "itemId": "1",
+            "amount": "15"
+          }
+        ]
+      }
+    ],
+    "evolution": {
+      "description": "Evoluir arma",
+      "traits": "",
+      "iconIndex": "1",
+      "name": "Espada Evoluida",
+      "note": "Espada Evoluida",
+      "params": [
+        "1000",
+        "1000",
+        "1000",
+        "1000",
+        "1000",
+        "1000",
+        "1000",
+        "1000"
+      ],
+      "costs": [
+        {
+          "itemId": "2",
+          "amount": "1"
+        }
+      ]
+    }
+  }
+]

@@ -1748,7 +1748,7 @@ Window_StatusBase.prototype.placeTimeGauge = function(actor, x, y) {
 
 Window_StatusBase.prototype.placeBasicGauges = function(actor, x, y) {
     this.placeGauge(actor, "hp", x, y);
-    this.placeGauge(actor, "mp", x, y + this.gaugeLineHeight());
+    actor.mmp && this.placeGauge(actor, "mp", x, y + this.gaugeLineHeight());
     if ($dataSystem.optDisplayTp) {
         this.placeGauge(actor, "tp", x, y + this.gaugeLineHeight() * 2);
     }

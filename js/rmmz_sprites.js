@@ -2295,9 +2295,9 @@ Sprite_Gauge.prototype.label = function() {
         case "hp":
             return TextManager.hpA;
         case "mp":
-            return TextManager.mpA;
+            return this._battler.mmp !== 0 ? TextManager.mpA : "";
         case "tp":
-            return TextManager.tpA;
+            return this._battler._actorId !== 2 ? TextManager.tpA : "BT";
         default:
             return "";
     }
@@ -2314,7 +2314,9 @@ Sprite_Gauge.prototype.gaugeColor1 = function() {
         case "mp":
             return ColorManager.mpGaugeColor1();
         case "tp":
-            return ColorManager.tpGaugeColor1();
+            return this._battler._actorId !==2 ?
+                ColorManager.tpGaugeColor1() :
+                ColorManager.btGaugeColor1();
         case "time":
             return ColorManager.ctGaugeColor1();
         default:
@@ -2329,7 +2331,9 @@ Sprite_Gauge.prototype.gaugeColor2 = function() {
         case "mp":
             return ColorManager.mpGaugeColor2();
         case "tp":
-            return ColorManager.tpGaugeColor2();
+            return this._battler._actorId !==2 ?
+                ColorManager.tpGaugeColor2() :
+                ColorManager.btGaugeColor2();
         case "time":
             return ColorManager.ctGaugeColor2();
         default:

@@ -1,0 +1,13 @@
+# RPG Maker MV/MZ
+backup/
+save/
+
+*.rpgsave
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Builds/exportações
+www/
+deploy/
